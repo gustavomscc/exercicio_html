@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title>Produtos</title>
+   </head>
+   <body>
+     
+     <h2>Lista de Produtos</h2>
+     <table border="1">
+       <tr>
+         <th>Produto</th>
+         <th>Preço</th>
+         <th>Em Estoque</th>
+       </tr>
+       <tr>
+         <td>Notebook</td>
+         <td>R$ 2500,00</td>
+         <td>10</td>
+       </tr>
+       <tr>
+         <td>Mouse Gamer</td>
+         <td>R$ 150,00</td>
+         <td>25</td>
+       </tr>
+       <tr>
+         <td>Teclado Mecânico</td>
+         <td>R$ 300,00</td>
+         <td>15</td>
+       </tr>
+     </table>
+     
+     <br>
+     
+     <h2>Formulário de Pedido</h2>
+     <form action="pedido.html" method="post">Nome do cliente:<br>
+     <input type="text" name="nome_cliente"><br><br>
+     
+     Produto desejado:<br><select name="produto_desejado">
+       <option>Notebook</option>
+       <option>Mouse Gamer</option>
+       <option>Teclado Mecanico</option>
+       </select><br><br>
+       
+      Quantidade desejada:<br><input type="number" name"quantidade" min="1"><br><br>
+      
+      <button type"submit">Enviar pedido</button>
+      
+     </form>
+   </body>
+ </html>
